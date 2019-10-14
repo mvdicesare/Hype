@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		269474452354D70C0020F4A0 /* Hype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269474442354D70C0020F4A0 /* Hype.swift */; };
 		625E1200233C10690076B139 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625E11FF233C10690076B139 /* AppDelegate.swift */; };
 		625E1202233C10690076B139 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625E1201233C10690076B139 /* SceneDelegate.swift */; };
-		625E1204233C10690076B139 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625E1203233C10690076B139 /* ViewController.swift */; };
 		625E1207233C10690076B139 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625E1205233C10690076B139 /* Main.storyboard */; };
 		625E1209233C106A0076B139 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 625E1208233C106A0076B139 /* Assets.xcassets */; };
 		625E120C233C106A0076B139 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625E120A233C106A0076B139 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		269474442354D70C0020F4A0 /* Hype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hype.swift; sourceTree = "<group>"; };
 		625E11FC233C10690076B139 /* Hype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		625E11FF233C10690076B139 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		625E1201233C10690076B139 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		625E1203233C10690076B139 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		625E1206233C10690076B139 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		625E1208233C106A0076B139 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		625E120B233C106A0076B139 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +37,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2694743D2354D3860020F4A0 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				625E11FF233C10690076B139 /* AppDelegate.swift */,
+				625E1201233C10690076B139 /* SceneDelegate.swift */,
+				625E1208233C106A0076B139 /* Assets.xcassets */,
+				625E120A233C106A0076B139 /* LaunchScreen.storyboard */,
+				625E120D233C106A0076B139 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		2694743E2354D3CF0020F4A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				269474442354D70C0020F4A0 /* Hype.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		269474402354D3FB0020F4A0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				269474422354D5930020F4A0 /* Model */,
+				269474412354D58A0020F4A0 /* View */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		269474412354D58A0020F4A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		269474422354D5930020F4A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		269474432354D59C0020F4A0 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				625E1205233C10690076B139 /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
 		625E11F3233C10690076B139 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +107,10 @@
 		625E11FE233C10690076B139 /* Hype */ = {
 			isa = PBXGroup;
 			children = (
-				625E11FF233C10690076B139 /* AppDelegate.swift */,
-				625E1201233C10690076B139 /* SceneDelegate.swift */,
-				625E1203233C10690076B139 /* ViewController.swift */,
-				625E1205233C10690076B139 /* Main.storyboard */,
-				625E1208233C106A0076B139 /* Assets.xcassets */,
-				625E120A233C106A0076B139 /* LaunchScreen.storyboard */,
-				625E120D233C106A0076B139 /* Info.plist */,
+				269474432354D59C0020F4A0 /* StoryBoards */,
+				269474402354D3FB0020F4A0 /* Controllers */,
+				2694743E2354D3CF0020F4A0 /* Model */,
+				2694743D2354D3860020F4A0 /* SupportingFiles */,
 			);
 			path = Hype;
 			sourceTree = "<group>";
@@ -138,9 +186,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				625E1204233C10690076B139 /* ViewController.swift in Sources */,
 				625E1200233C10690076B139 /* AppDelegate.swift in Sources */,
 				625E1202233C10690076B139 /* SceneDelegate.swift in Sources */,
+				269474452354D70C0020F4A0 /* Hype.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,13 +333,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H8C27D6HU3;
-				INFOPLIST_FILE = Hype/Info.plist;
+				DEVELOPMENT_TEAM = B35K2XL3AM;
+				INFOPLIST_FILE = "$(SRCROOT)/Hype/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = A.Hype;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hype.MD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -303,13 +351,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H8C27D6HU3;
-				INFOPLIST_FILE = Hype/Info.plist;
+				DEVELOPMENT_TEAM = B35K2XL3AM;
+				INFOPLIST_FILE = "$(SRCROOT)/Hype/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = A.Hype;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hype.MD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
