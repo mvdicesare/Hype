@@ -10,6 +10,7 @@
 		260575DC2358CCAE00FCCAE9 /* PhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260575DB2358CCAE00FCCAE9 /* PhotoPickerViewController.swift */; };
 		260575DF2358DA1100FCCAE9 /* PhotoPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 260575DD2358DA1100FCCAE9 /* PhotoPicker.storyboard */; };
 		260575E12358DB6800FCCAE9 /* HypePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260575E02358DB6800FCCAE9 /* HypePhotoViewController.swift */; };
+		260575E32358F68000FCCAE9 /* HypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260575E22358F68000FCCAE9 /* HypeTableViewCell.swift */; };
 		268EE2BE23562302002085DD /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268EE2BD23562302002085DD /* CloudKit.framework */; };
 		268EE2F8235775AA002085DD /* CustomeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268EE2F7235775AA002085DD /* CustomeUser.swift */; };
 		268EE2FA23577B28002085DD /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268EE2F923577B28002085DD /* UserController.swift */; };
@@ -30,6 +31,7 @@
 		260575DB2358CCAE00FCCAE9 /* PhotoPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerViewController.swift; sourceTree = "<group>"; };
 		260575DE2358DA1100FCCAE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Hype/StoryBoards/Base.lproj/PhotoPicker.storyboard; sourceTree = "<group>"; };
 		260575E02358DB6800FCCAE9 /* HypePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypePhotoViewController.swift; sourceTree = "<group>"; };
+		260575E22358F68000FCCAE9 /* HypeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeTableViewCell.swift; sourceTree = "<group>"; };
 		268EE2BB235622FF002085DD /* Hype.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hype.entitlements; sourceTree = "<group>"; };
 		268EE2BD23562302002085DD /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		268EE2F7235775AA002085DD /* CustomeUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeUser.swift; sourceTree = "<group>"; };
@@ -61,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		260575E42358F68B00FCCAE9 /* CustomeView */ = {
+			isa = PBXGroup;
+			children = (
+				260575E22358F68000FCCAE9 /* HypeTableViewCell.swift */,
+			);
+			path = CustomeView;
+			sourceTree = "<group>";
+		};
 		268EE2BC23562302002085DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +112,7 @@
 		269474412354D58A0020F4A0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				260575E42358F68B00FCCAE9 /* CustomeView */,
 				269474482354EAD10020F4A0 /* HypeListViewController.swift */,
 				268EE2FB2357897E002085DD /* SignInViewController.swift */,
 				260575DB2358CCAE00FCCAE9 /* PhotoPickerViewController.swift */,
@@ -251,6 +262,7 @@
 				268EE2F8235775AA002085DD /* CustomeUser.swift in Sources */,
 				625E1202233C10690076B139 /* SceneDelegate.swift in Sources */,
 				269474452354D70C0020F4A0 /* Hype.swift in Sources */,
+				260575E32358F68000FCCAE9 /* HypeTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

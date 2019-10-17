@@ -18,7 +18,7 @@ struct HypeStrings {
 }
 // MARK: - Class Declarations
 class Hype {
-    
+    var user: User?
     var body: String
     var timestamp: Date
     let ckRecordID: CKRecord.ID

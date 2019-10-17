@@ -97,7 +97,7 @@ extension CKRecord {
         if let asset = user.photoAsset {
             self.setValue(asset, forKey: UserStrings.photoAssetKey)
         }
-
+        
     }
 }
 

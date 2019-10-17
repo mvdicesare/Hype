@@ -112,13 +112,14 @@ extension HypeListViewController: UITableViewDelegate, UITableViewDataSource {
         
         return HypeController.shared.hypes.count
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HypeCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HypeCell", for: indexPath) as? HypeTableViewCell
         
         let hype = HypeController.shared.hypes[indexPath.row]
-        cell.textLabel?.text = hype.body
-        cell.detailTextLabel?.text = hype.timestamp.formatDate()
-        return cell
+        cell?.hype = hype
+
+        return cell ?? UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
