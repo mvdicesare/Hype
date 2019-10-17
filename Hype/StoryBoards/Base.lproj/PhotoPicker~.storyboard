@@ -44,7 +44,7 @@
                                     <constraint firstAttribute="height" constant="150" id="Vfh-ex-J0O"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="tk1-xm-6Bh" kind="embed" identifier="photoPickerVC" id="6A2-G1-ceI"/>
+                                    <segue destination="wY6-Li-fBD" kind="embed" identifier="photoPickerVC" id="6A2-G1-ceI"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -69,13 +69,44 @@
             </objects>
             <point key="canvasLocation" x="121" y="-534"/>
         </scene>
-        <!--PhotoPicker-->
-        <scene sceneID="FeO-Rh-1zP">
+        <!--Photo Picker View Controller-->
+        <scene sceneID="mvc-EP-ZUh">
             <objects>
-                <viewControllerPlaceholder storyboardName="PhotoPicker" id="tk1-xm-6Bh" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mj7-8C-ped" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="wY6-Li-fBD" customClass="PhotoPickerViewController" customModule="Hype" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V5q-Cg-egQ">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pgh-RY-UX9">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkC-7I-5PN">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="selectPhotoButtonTapped:" destination="wY6-Li-fBD" eventType="touchUpInside" id="hrb-SS-I9l"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Pgh-RY-UX9" secondAttribute="bottom" id="050-CJ-SYW"/>
+                            <constraint firstAttribute="trailing" secondItem="hkC-7I-5PN" secondAttribute="trailing" id="2bC-zs-W1M"/>
+                            <constraint firstItem="hkC-7I-5PN" firstAttribute="leading" secondItem="V5q-Cg-egQ" secondAttribute="leading" id="8AZ-Nl-cM1"/>
+                            <constraint firstAttribute="bottom" secondItem="hkC-7I-5PN" secondAttribute="bottom" id="9XZ-Ol-J4E"/>
+                            <constraint firstItem="Pgh-RY-UX9" firstAttribute="leading" secondItem="V5q-Cg-egQ" secondAttribute="leading" id="SmD-nz-SGH"/>
+                            <constraint firstItem="hkC-7I-5PN" firstAttribute="top" secondItem="V5q-Cg-egQ" secondAttribute="top" id="arf-d2-s0C"/>
+                            <constraint firstItem="Pgh-RY-UX9" firstAttribute="top" secondItem="V5q-Cg-egQ" secondAttribute="top" id="hYA-M5-47R"/>
+                            <constraint firstAttribute="trailing" secondItem="Pgh-RY-UX9" secondAttribute="trailing" id="o7n-Pd-G2G"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="photoImageView" destination="Pgh-RY-UX9" id="llJ-24-aDq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CBV-66-stn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="667" y="-858"/>
+            <point key="canvasLocation" x="707" y="-785"/>
         </scene>
     </scenes>
 </document>
